@@ -1,5 +1,7 @@
 # go-http-context-mysql
 
+The purpose of this repo is to test what happens with a go http server when the client cancels a request early, to see if the server will also return early, and if the MySQL driver will appropriately cancel any DB operations.
+
 ## Requirements
 
 - MySQL
@@ -25,8 +27,8 @@ Some curl commands:
 ```sh
 curl localhost:8090/longResponse
 curl localhost:8090/longResponseChecksContext
-curl localhost:8090/longResponseDBNoTx
 curl localhost:8090/longResponseDB
+curl localhost:8090/longResponseDBNoTx
 ```
 
 You can test Ctrl-C while running the curl commands to see what happens.
