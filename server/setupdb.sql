@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS testcontexts;
+CREATE DATABASE IF NOT EXISTS testcontexts;
+USE testcontexts;
+
+DROP TABLE IF EXISTS students;
+
+CREATE TABLE students (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id)
+)

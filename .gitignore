@@ -1,0 +1,7 @@
+# sensitive configuration and local overrides
+.env
+
+# Goland IDE
+.idea/
+.run/
+
